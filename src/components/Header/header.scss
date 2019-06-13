@@ -1,0 +1,25 @@
+.Header {
+  position: relative;
+  color: white;
+
+  & > * {
+    position: fixed;
+    z-index: 200;
+  }
+
+  .HeaderName {
+    top: 20px;
+    left: 30px;
+    font-size: 5rem;
+  }
+
+  .HeaderLinks {
+    width: 50px;
+    top: 20px;
+    right: 30px;
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+}
