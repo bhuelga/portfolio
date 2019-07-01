@@ -1,0 +1,21 @@
+//   FONTS   //
+
+
+//   COLORS   //
+
+
+
+//   MIXINS   //
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//   Z-INDEX   //
+$fixed-top: 500;
+$above-overlay: 100;
+
+//   TRANSITIONS   //
+$slow: .5s;
+$fast: .3s;
