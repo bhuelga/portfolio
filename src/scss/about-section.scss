@@ -5,5 +5,29 @@
   position: absolute;
   top: 100vh;
   left: 33%;
+  padding: 30px 100px;
+
+  color: white;
+  text-align: center;
   background: $background-1;
+
+  h3 {
+    font-size: 6rem;
+    font-family: 'Wire One';
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    text-align: left;
+  }
+
 }

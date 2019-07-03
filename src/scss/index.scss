@@ -40,6 +40,7 @@ section {
 #sidebar {
   width: 33%;
   height: 100vh;
+  padding: 20px 0;
   position: absolute;
   top: 100vh;
   left: 0;
@@ -59,10 +60,18 @@ section {
 
   h2 {
     font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   ul {
-    margin-top: 80%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 
     li {
       margin: 0 2.5px;

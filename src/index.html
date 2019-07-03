@@ -30,7 +30,11 @@
   <main>
     
     <section id="title-section">
+      <video autoplay muted loop>
+        <source src="./img/diving_video.mp4" type="video/mp4">
+      </video>
       <h1>BRANDON HUELGA</h1>
+      <img src="./img/seal.png" alt="seal"/>
     </section>
 
     <aside id="sidebar">
@@ -51,7 +55,9 @@
     </aside>
 
     <section id="about-section">
-
+      <h3>About</h3>
+      <img src="./img/brandon.jpg" alt="brandon"/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, fuga neque totam velit vitae blanditiis officia, deleniti, beatae nobis quo molestias recusandae hic? Corporis dolorum vel quod, facilis vero odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel amet corporis, optio laudantium, corrupti saepe eaque, perspiciatis atque soluta fugit excepturi. Adipisci corporis dolor aperiam quos voluptatem rerum. Nobis, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum cum consequatur repudiandae ratione incidunt iusto quod odit, repellendus dicta expedita, laborum iure, repellat quia beatae dolores enim autem necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim saepe autem facere voluptate consectetur dolor cumque praesentium incidunt nam, necessitatibus, quasi, eligendi earum ipsam culpa ratione vero architecto repellat.</p>
     </section>
 
     <section id="projects-section">
@@ -63,7 +69,18 @@
     </section>
 
     <section id="contact-section">
-      
+      <form name="input" method="POST" action="https://formspree.io/bahuelga@gmail.com">
+        <label for="name-field">Name</label>
+        <input id="name-field" type="text" name="Name" required aria-required="true"/>
+        <label for="email-field">Email</label>
+        <input id="email-field" type="email" name="_replyto" required aria-required="true"/>
+        <label for="message-field">Message</label>
+        <textarea id="message-field" name="message" maxlength="1000" required aria-required="true"></textarea>
+        <button type="submit" value="Send">Send</button>
+        <input type="hidden" name="_subject" value="Arf arf! - Bleu" />
+        <input type="hidden" name="_next" value="./" />
+      </form>
+      <span class="copyright">© 2019 Brandon Huelga</span>
     </section>
 
   </main>

@@ -3,4 +3,47 @@
   position: absolute;
   top: 400vh;
   left: 33%;
-  background: #001520; }
+  background: #001520;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.25rem;
+  border-bottom: 100px solid #000d13;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #contact-section form {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+    #contact-section form label {
+      margin-bottom: 5px; }
+    #contact-section form input, #contact-section form textarea {
+      background: none;
+      border: 1px solid white;
+      font-family: inherit;
+      padding: 5px;
+      margin-bottom: 20px; }
+    #contact-section form textarea {
+      height: 300px; }
+    #contact-section form button {
+      width: 50%;
+      padding: 10px;
+      background: none;
+      border: 1px solid white;
+      font-family: inherit;
+      font-weight: bold;
+      color: inherit;
+      align-self: center;
+      transition: 0.5s;
+      cursor: pointer; }
+      #contact-section form button:hover {
+        color: #001520;
+        background: white; }
+      #contact-section form button:focus {
+        color: #001520;
+        background: white; }
+  #contact-section .copyright {
+    position: absolute;
+    top: calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-50%); }
