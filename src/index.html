@@ -11,10 +11,16 @@
   <meta name="keywords" content="portfolio, brandon, huelga, stanford">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Fonts -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Wire+One&display=swap" rel="stylesheet">
   <!-- build:css /css/index.min.css -->
   <link rel="stylesheet" href="./css/util.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/title-section.css">
+  <link rel="stylesheet" href="./css/about-section.css">
+  <link rel="stylesheet" href="./css/projects-section.css">
+  <link rel="stylesheet" href="./css/experience-section.css">
+  <link rel="stylesheet" href="./css/contact-section.css">
   <!-- endbuild -->
 
 </head>
@@ -22,10 +28,27 @@
 <body>
 
   <main>
-
+    
     <section id="title-section">
       <h1>BRANDON HUELGA</h1>
     </section>
+
+    <aside id="sidebar">
+      <img src="./img/seal.png" alt="aminal"/>
+      <h2>Brandon Huelga</h2>
+      <ul>
+        <li class="active">Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Experience</li>
+        <li>Contact</li>
+      </ul>
+      <div>
+        <span>LI</span>
+        <img src="./img/seal.png" alt="seal"/>
+        <span>GH</span>
+      </div>
+    </aside>
 
     <section id="about-section">
 
@@ -40,24 +63,7 @@
     </section>
 
     <section id="contact-section">
-      <span>© 2019 Brandon Huelga</span>
-      <form name="input" method="POST" action="https://formspree.io/bahuelga@gmail.com">
-        <div class="input-container">
-          <label for="name-field">Name</label>
-          <input id="name-field" type="text" name="Name" required aria-required="true"/>
-        </div>
-        <div class="input-container">
-          <label for="email-field">Email</label>
-          <input id="email-field" type="email" name="_replyto" required aria-required="true"/>
-        </div>
-        <div class="input-container">
-          <label for="message-field">Message</label>
-          <textarea id="message-field" name="message" maxlength="1000" required aria-required="true"></textarea>
-        </div>
-        <button type="submit" value="Send">Send</button>
-        <input type="hidden" name="_subject" value="Arf arf! - Bleu" />
-        <input type="hidden" name="_next" value="./" />
-      </form>
+      
     </section>
 
   </main>
@@ -65,7 +71,7 @@
 	<!-- JQuery CDN -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- build:js /js/index.min.js -->
-  <script src="./js/slideshow.js"></script>
+  <script src="./js/sidebar.js"></script>
   <script src="./js/index.js"></script>
   <!-- endbuild -->
 </body>

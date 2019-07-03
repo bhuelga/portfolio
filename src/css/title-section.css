@@ -1,0 +1,14 @@
+#title-section {
+  position: relative;
+  background-image: url("../img/ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #title-section h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    font-family: 'Wire One';
+    color: white;
+    font-size: 10rem;
+    white-space: nowrap;
+    transform: translateX(-50%); }
