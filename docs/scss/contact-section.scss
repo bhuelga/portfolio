@@ -1,10 +1,7 @@
 @import './util';
 
 #contact-section {
-  width: 67%;
-  position: absolute;
-  top: 400vh;
-  left: 33%;
+  position: relative;
   background: $background-4;
   color: white;
   font-family: 'Montserrat';
@@ -59,9 +56,9 @@
 
   .copyright {
     position: absolute;
+    color: white;
     top: calc(100% + 40px);
     left: 50%;
     transform: translateX(-50%);
-
   }
 }

@@ -1,8 +1,4 @@
 #about-section {
-  width: 67%;
-  position: absolute;
-  top: 100vh;
-  left: 33%;
   padding: 30px 100px;
   color: white;
   text-align: center;
@@ -13,7 +9,7 @@
     margin-bottom: 20px; }
   #about-section img {
     width: 200px;
-    height: 250px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 50%; }
   #about-section p {
