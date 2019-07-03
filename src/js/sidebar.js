@@ -15,19 +15,19 @@ class Sidebar {
       }
 
       // active links on scroll
-      if (scrollTop > windowHeight && scrollTop < 2*windowHeight) {
+      if (scrollTop >= windowHeight && scrollTop < 2*windowHeight) {
         $('#sidebar ul li').removeClass('active');
         $('#sidebar ul li:eq(1)').addClass('active');
         $('#sidebar > img').attr('src', '../img/turtle.png');
-      } else if (scrollTop > 2*windowHeight && scrollTop < 3*windowHeight) {
+      } else if (scrollTop >= 2*windowHeight && scrollTop < 3*windowHeight) {
         $('#sidebar ul li').removeClass('active');
         $('#sidebar ul li:eq(2)').addClass('active');
         $('#sidebar > img').attr('src', '../img/tuna.png');
-      } else if (scrollTop > 3*windowHeight && scrollTop < 4*windowHeight) {
+      } else if (scrollTop >= 3*windowHeight && scrollTop < 4*windowHeight) {
         $('#sidebar ul li').removeClass('active');
         $('#sidebar ul li:eq(3)').addClass('active');
         $('#sidebar > img').attr('src', '../img/shark.png');
-      } else if (scrollTop > 4*windowHeight) {
+      } else if (scrollTop >= 4*windowHeight) {
         $('#sidebar ul li').removeClass('active');
         $('#sidebar ul li:eq(4)').addClass('active');
         $('#sidebar > img').attr('src', '../img/octopus.png');
@@ -38,6 +38,10 @@ class Sidebar {
     $('#sidebar ul li').click(function() {
       $('#sidebar ul li').removeClass('active');
       $(this).addClass('active');
+      const index = $(this).index();
+      $('html, body').animate({
+        scrollTop: index * $(window).height()
+      }, 300);
     })
   }
 }
