@@ -1,10 +1,6 @@
 @import './util';
 
 #about-section {
-  width: 67%;
-  position: absolute;
-  top: 100vh;
-  left: 33%;
   padding: 30px 100px;
 
   color: white;
@@ -19,7 +15,7 @@
 
   img {
     width: 200px;
-    height: 250px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 50%;
   }
