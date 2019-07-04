@@ -1,2 +1,16 @@
 #projects-section {
-  background: #01324a; }
+  color: white;
+  position: relative;
+  background: #01324a;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #projects-section h3 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Wire One';
+    font-size: 5rem; }
+  #projects-section div {
+    font-family: 'Montserrat'; }

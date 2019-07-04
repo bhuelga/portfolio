@@ -1,5 +1,21 @@
 @import './util';
 
 #projects-section {
+  color: white;
+  position: relative;
   background: $background-2;
+  @include center-content();
+
+  h3 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Wire One';
+    font-size: 5rem;
+  }
+
+  div {
+    font-family: 'Montserrat';
+  }
 }
