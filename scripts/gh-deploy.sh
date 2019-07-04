@@ -1,2 +1,3 @@
 #!/bin/bash
-git subtree push --prefix docs origin gh-pages;
+rm -rf ./docs/*;
+cp -r ./src/* ./docs;
