@@ -100,7 +100,9 @@ section {
     }
   }
 
-  div {
+  .bottom-links {
+    display: flex;
+    align-items: center;
     position: absolute;
     left: 50%;
     bottom: 50px;
@@ -109,15 +111,30 @@ section {
     color: white;
     font-size: 2rem;
 
-    span {
-      padding: 10px 20px;
-      background: $link-bg;
+    div {
+      height: 70px;
+      width: 70px;
+      margin: 0 20px;
       border-radius: 50%;
+      background: $link-bg;
+      @include center-content();
+      cursor: pointer;
+      transition: $fast;
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
+
+      &:hover {
+        background: lighten($link-bg, 10%);
+      }
     }
 
     img {
       height: 50px;
       width: 50px;
+      cursor: pointer;
     }
   }
 }
