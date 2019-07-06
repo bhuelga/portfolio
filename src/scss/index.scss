@@ -115,8 +115,6 @@ section {
       height: 70px;
       width: 70px;
       margin: 0 20px;
-      border-radius: 50%;
-      background: $link-bg;
       @include center-content();
       cursor: pointer;
       transition: $fast;
@@ -127,7 +125,8 @@ section {
       }
 
       &:hover {
-        background: lighten($link-bg, 10%);
+        height: 80px;
+        width: 80px;
       }
     }
 

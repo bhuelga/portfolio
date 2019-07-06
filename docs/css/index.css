@@ -86,8 +86,6 @@ section {
       height: 70px;
       width: 70px;
       margin: 0 20px;
-      border-radius: 50%;
-      background: #0077b5;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -97,7 +95,8 @@ section {
         height: 50%;
         width: 50%; }
       #sidebar .bottom-links div:hover {
-        background: #0099e8; }
+        height: 80px;
+        width: 80px; }
     #sidebar .bottom-links img {
       height: 50px;
       width: 50px;

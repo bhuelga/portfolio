@@ -1,14 +1,15 @@
 #about-section {
   padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   text-align: center;
   background: #044768; }
   #about-section img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 50%; }
+    height: 50%; }
   #about-section p {
+    width: 50%;
     font-size: 1.5rem;
     font-family: 'Montserrat';
-    text-align: left; }
+    text-align: justify; }

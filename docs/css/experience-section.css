@@ -35,8 +35,9 @@
       #experience-section .slideshow .slide div {
         width: 100%;
         display: flex;
+        font-size: 1.25rem;
         justify-content: space-between;
-        margin-bottom: 5px; }
+        margin-bottom: 10px; }
     #experience-section .slideshow a {
       padding: 20px 30px;
       position: absolute;
