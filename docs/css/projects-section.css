@@ -12,5 +12,5 @@
     transform: translateX(-50%);
     font-family: 'Wire One';
     font-size: 5rem; }
-  #projects-section div {
-    font-family: 'Montserrat'; }
+  #projects-section img {
+    width: 100%; }
