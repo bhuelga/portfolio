@@ -1,14 +1,9 @@
 class App {
   constructor() {
     this.sidebar = new Sidebar();
-    this.slideshow = new Slideshow();
-    this.addEventListeners();
+    this.projectsSlideshow = new Slideshow('#projects-section .slideshow', 1);
+    this.experienceSlideshow = new Slideshow('#experience-section .slideshow', 5);
   }
-
-  addEventListeners() {
-    
-  }
-
 }
 
 $(document).ready(() => {

@@ -1,22 +1,23 @@
 class Slideshow {
-  constructor() {
+  constructor(section, numSlides) {
+    this.section = section;
     this.index = 0;
-    this.slides = $('.slide');
-    this.numSlides = 5;         // INPUT NUM SLIDES - 1 (b/c zero indexed)
+    this.slides = $(section).children('.slide');
+    this.numSlides = numSlides;
     this.showSlide(this.index);
 
     // previous slide button
-    $('.prev').click(() => {
+    $(section).children('.prev').click(() => {
       this.showSlide(this.index - 1);
     })
 
     // next slide button
-    $('.next').click(() => {
+    $(section).children('.next').click(() => {
       this.showSlide(this.index + 1);
     })
 
     // dots
-    $('.dots span').click((e) => {
+    $(section).children('.dots').children('span').click((e) => {
       const index = $(e.currentTarget).index();
       this.showSlide(index);
       this._activateDots(index);
@@ -36,15 +37,15 @@ class Slideshow {
     
     this._activateDots(n);
     this.slides.fadeOut();
-    setTimeout(function() {
-      $(`.slide:eq(${n})`).fadeIn();
+    setTimeout(() => {
+      $(this.section).children(`.slide:eq(${n})`).fadeIn();
     }, 500);
   }
 
   // highlights correct dot
   _activateDots(index) {
-    $('.dots span').removeClass('active');
-    $(`.dots span:eq(${index})`).addClass('active');
+    $(this.section).children('.dots').children('span').removeClass('active');
+    $(this.section).children('.dots').children(`span:eq(${index})`).addClass('active');
   }
 
 }
