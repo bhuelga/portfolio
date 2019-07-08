@@ -6,12 +6,10 @@
   background: $background-3;
 
   h3 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: 'Wire One';
     font-size: 5rem;
+    text-align: center;
+    margin: 0;
   }
   
   .slideshow {
@@ -23,6 +21,7 @@
       padding: 0 15%;
       display: none;
       color: white;
+      position: relative;
       font-family: 'Montserrat';
 
       h4 {
@@ -32,15 +31,16 @@
       }
 
       table {
-        margin: -5%;
         border-spacing: 20px;
         table-layout: fixed;
+        transform: translateY(-100px);
 
         tr > td {
           font-weight: 600;
 
           span {
             display: block;
+            margin-bottom: 5px;
           }
         }
       }
@@ -52,10 +52,6 @@
         justify-content: space-between;
         margin-bottom: 10px;
       }
-
-      // p {
-
-      // }
     }
 
     a {
@@ -113,6 +109,51 @@
           opacity: .9;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #experience-section {
+    table {
+      font-size: .9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #experience-section {
+    table {
+      font-size: .7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #experience-section {
+    h3 {
+      font-size: 4rem;
+      white-space: nowrap;
+    }
+
+    .slide {
+      overflow-y: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #experience-section {
+    table {
+      font-size: .5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #experience-section {
+    table {
+      font-size: .4rem;
     }
   }
 }

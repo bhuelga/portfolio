@@ -16,4 +16,6 @@
     width: 100%; }
   #projects-section iframe {
     width: 800px;
-    height: 500px; }
+    height: 500px;
+    max-width: 100%;
+    max-height: 80%; }

@@ -3,12 +3,10 @@
   color: white;
   background: #002537; }
   #experience-section h3 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: 'Wire One';
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-align: center;
+    margin: 0; }
   #experience-section .slideshow {
     width: 100%;
     height: 100%;
@@ -19,19 +17,21 @@
       padding: 0 15%;
       display: none;
       color: white;
+      position: relative;
       font-family: 'Montserrat'; }
       #experience-section .slideshow .slide h4 {
         font-weight: 600;
         font-size: 1.5rem;
         margin-bottom: 5px; }
       #experience-section .slideshow .slide table {
-        margin: -5%;
         border-spacing: 20px;
-        table-layout: fixed; }
+        table-layout: fixed;
+        transform: translateY(-100px); }
         #experience-section .slideshow .slide table tr > td {
           font-weight: 600; }
           #experience-section .slideshow .slide table tr > td span {
-            display: block; }
+            display: block;
+            margin-bottom: 5px; }
       #experience-section .slideshow .slide div {
         width: 100%;
         display: flex;
@@ -78,3 +78,26 @@
           opacity: .75; }
         #experience-section .slideshow .dots span.active {
           opacity: .9; }
+
+@media screen and (max-width: 1700px) {
+  #experience-section table {
+    font-size: .9rem; } }
+
+@media screen and (max-width: 1350px) {
+  #experience-section table {
+    font-size: .7rem; } }
+
+@media screen and (max-width: 1050px) {
+  #experience-section h3 {
+    font-size: 4rem;
+    white-space: nowrap; }
+  #experience-section .slide {
+    overflow-y: auto; } }
+
+@media screen and (max-width: 1000px) {
+  #experience-section table {
+    font-size: .5rem; } }
+
+@media screen and (max-width: 450px) {
+  #experience-section table {
+    font-size: .4rem; } }

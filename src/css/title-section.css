@@ -1,7 +1,8 @@
 #title-section {
   position: relative;
   background: url("../img/monterey_bay.jpg");
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
   #title-section:after {
     content: '';
     width: 100%;
@@ -34,3 +35,23 @@
     left: 20px;
     opacity: .8;
     z-index: 100; }
+
+@media screen and (max-width: 1250px) {
+  #title-section {
+    background-size: cover; } }
+
+@media screen and (max-width: 1000px) {
+  #title-section h1 {
+    font-size: 10rem; } }
+
+@media screen and (max-width: 650px) {
+  #title-section h1 {
+    font-size: 7rem; } }
+
+@media screen and (max-width: 475px) {
+  #title-section h1 {
+    font-size: 5rem; } }
+
+@media screen and (max-width: 350px) {
+  #title-section h1 {
+    font-size: 3rem; } }

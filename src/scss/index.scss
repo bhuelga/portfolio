@@ -64,12 +64,13 @@ section {
 
   & > img {
     width: 50%;
+    max-height: 300px;
   }
 
   h2 {
     font-size: 4rem;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -91,11 +92,6 @@ section {
 
       &.active {
         font-size: 2.5rem;
-      }
-
-      &:not(:last-child):after {
-        content: '|';
-        margin-left: 5px;
       }
     }
   }
@@ -129,6 +125,16 @@ section {
       height: 50px;
       width: 50px;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #sidebar ul {
+    top: 60%;
+
+    li {
+     display: block;
     }
   }
 }
@@ -227,6 +233,14 @@ section {
       &.active {
         opacity: .9;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .slideshow {
+    .prev,.next {
+      padding: 10px 20px;
     }
   }
 }
