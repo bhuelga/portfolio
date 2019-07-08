@@ -7,7 +7,10 @@
   text-align: center;
   background: #044768; }
   #about-section img {
-    height: 50%; }
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0; }
   #about-section p {
     width: 50%;
     font-size: 1.5rem;

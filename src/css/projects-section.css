@@ -13,4 +13,7 @@
     font-family: 'Wire One';
     font-size: 5rem; }
   #projects-section img {
-    width: 50%; }
+    width: 100%; }
+  #projects-section iframe {
+    width: 800px;
+    height: 500px; }
